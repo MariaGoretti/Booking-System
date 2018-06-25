@@ -64,10 +64,10 @@ li a:visited {
   
   <body>
 <ul>
-  <li><a class="active" href="/Finsmarts/index.php">Home</a></li>
-  <li><a href="/Finsmarts/index.php#section-one">Overview</a></li>
-  <li><a href="/Finsmarts/index.php#section-five">Newsletter</a></li>
-  <li><a href="/Finsmarts/index.php#section-six">Contact</a></li>
+  <li><a class="active" href="/Finsmarts/home.php">Home</a></li>
+  <li><a href="/Finsmarts/home.php#section-one">Overview</a></li>
+  <li><a href="/Finsmarts/home.php#section-five">Newsletter</a></li>
+  <li><a href="/Finsmarts/home.php#section-six">Contact</a></li>
   <li><a href="/Finsmarts/booking/makebooking.php">Book Appointment</a></li>
 <li style="float:right;"><a href="/Finsmarts/Includes/logout.inc.php">Logout</a></li>
    </ul>

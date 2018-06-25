@@ -12,7 +12,7 @@ if (isset($_POST['submit'])) {
 	//Error handlers
 	//Check if inputs are empty
 	if (empty($email) || empty($pwd)) {
-		header("Location: ../index.php?login=empty");
+		header("Location: ../home.php?login=empty");
 		exit();
 	} else {
 		$sql = "SELECT * FROM users WHERE user_email='$email'";
@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
 		$resultCheck = mysqli_num_rows($result);
 
 		if ($resultCheck < 1) {
-			header("Location: ../index.php?login=error1");
+			header("Location: ../home.php?login=error1");
 			exit();
 		} else {
 			if ($row = mysqli_fetch_assoc($result)) {
@@ -29,7 +29,7 @@ if (isset($_POST['submit'])) {
         $myusertype = $row['user_type'];
 
 				if ($hashedPwdCheck == true) {
-					header("Location: ../index.php?login=error2");
+					header("Location: ../home.php?login=error2");
 					exit();
 				} elseif ($hashedPwdCheck == false) {
 					//Log in the user here
@@ -52,6 +52,6 @@ if (isset($_POST['submit'])) {
 		}
 	}
 } else {
-	header("Location: ../index.php?login=error3");
+	header("Location: ../home.php?login=error3");
 	exit();
 }
